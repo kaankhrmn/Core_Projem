@@ -9,10 +9,10 @@ namespace Core_Proje.ViewComponents.Feature
 
         public IViewComponentResult Invoke()
         {
-            var values = FeatureManager.GetList();
+            var values = featureManager.GetList();
             return View(values);
         }
 
-        FeatureManager FeatureManager =new FeatureManager(new EfFeatureDal());
+        FeatureManager featureManager =new FeatureManager(new EfFeatureDal());
     }
 }
