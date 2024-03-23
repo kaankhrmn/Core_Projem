@@ -33,12 +33,16 @@ namespace Core_Proje.Controllers
             skillManager.TAdd(skill);
             return RedirectToAction("Index"); //index aksiyonuna yönlendirir.
         }
+
+
         public IActionResult DeleteSkill(int id)
         {
             var values = skillManager.TGetById(id);
             skillManager.TDelete(values); //silme işlemini yapmak için ilk önce o nesneyi bulmam lazım.
             return RedirectToAction("Index");
         }
+
+
         [HttpGet] //sayfa yüklendiği zaman çalışır
         public IActionResult EditSkill(int id)
         {
