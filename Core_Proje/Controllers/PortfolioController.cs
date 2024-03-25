@@ -11,11 +11,26 @@ namespace Core_Proje.Controllers
 
 		public IActionResult Index()
 		{
-			ViewBag.v1 = "Portfolio Düzenlemesi";
-            ViewBag.v2 = "Portfolio";
-            ViewBag.v3 = "Portfolio Düzenlemesi";
+			ViewBag.v1 = "Proje Listesi";
+            ViewBag.v2 = "Projelerim";
+            ViewBag.v3 = "Proje Listesi";
             var values = portfolioManager.GetList();
 			return View(values);
+		}
+		//Proje ekleme
+		[HttpGet]
+		public IActionResult AddPortfolio()
+		{
+            ViewBag.v1 = "Proje Ekleme";
+            ViewBag.v2 = "Projelerim";
+            ViewBag.v3 = "Proje Ekleme";
+            return View();
+		}
+		[HttpPost]
+		public IActionResult AddPortfolio(Portfolio portfolio)
+		{
+			portfolioManager.TAdd(portfolio);
+			return RedirectToAction("Index");
 		}
 	}
 }

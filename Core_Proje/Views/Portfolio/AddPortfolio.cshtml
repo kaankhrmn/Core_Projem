@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "AddPortfolio";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+	<h3 class="mb-0">Proje Ekleme Sayfası</h3>
+</div>
+<form class="form-group" method="post">
+	@*sayfada button tetiklendiğinde aktif olacak demek post*@
+	<br />
+	@Html.Label("Proje Başlığı")
+	<br />
+	<input type="text" name="Name" class="form-control1" /> @* Bu name Db deki name *@
+	<br />
+	<label>Değer</label>
+	<br />
+	<input type="text" name="ImageUrl" class="form-control1" /> @* Bu name Db deki name *@
+	<br /><br />
+	<button class="btn btn-primary">Kaydet</button>
+</form>

@@ -13,25 +13,25 @@ namespace DataAccessLayer.Migrations
             migrationBuilder.DropTable(
                 name: "Contects");
 
-            migrationBuilder.DropColumn(
-                name: "Adress",
-                table: "Features");
+            //migrationBuilder.DropColumn(
+            //    name: "Adress",
+            //    table: "Features");
 
-            migrationBuilder.DropColumn(
-                name: "Age",
-                table: "Features");
+            //migrationBuilder.DropColumn(
+            //    name: "Age",
+            //    table: "Features");
 
-            migrationBuilder.DropColumn(
-                name: "ImageUrl",
-                table: "Features");
+            //migrationBuilder.DropColumn(
+            //    name: "ImageUrl",
+            //    table: "Features");
 
-            migrationBuilder.DropColumn(
-                name: "Mail",
-                table: "Features");
+            //migrationBuilder.DropColumn(
+            //    name: "Mail",
+            //    table: "Features");
 
-            migrationBuilder.DropColumn(
-                name: "Phone",
-                table: "Features");
+            //migrationBuilder.DropColumn(
+            //    name: "Phone",
+            //    table: "Features");
 
             migrationBuilder.AddColumn<string>(
                 name: "ProjectUrl",
@@ -78,40 +78,40 @@ namespace DataAccessLayer.Migrations
                 name: "İmageUrl2",
                 table: "Portfolios");
 
-            migrationBuilder.AddColumn<string>(
-                name: "Adress",
-                table: "Features",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "Adress",
+            //    table: "Features",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
-            migrationBuilder.AddColumn<string>(
-                name: "Age",
-                table: "Features",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "Age",
+            //    table: "Features",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
-            migrationBuilder.AddColumn<string>(
-                name: "ImageUrl",
-                table: "Features",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "ImageUrl",
+            //    table: "Features",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
-            migrationBuilder.AddColumn<string>(
-                name: "Mail",
-                table: "Features",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "Mail",
+            //    table: "Features",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
-            migrationBuilder.AddColumn<string>(
-                name: "Phone",
-                table: "Features",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "");
+            //migrationBuilder.AddColumn<string>(
+            //    name: "Phone",
+            //    table: "Features",
+            //    type: "nvarchar(max)",
+            //    nullable: false,
+            //    defaultValue: "");
 
             migrationBuilder.CreateTable(
                 name: "Contects",

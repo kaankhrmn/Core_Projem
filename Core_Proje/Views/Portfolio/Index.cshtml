@@ -18,7 +18,7 @@
                             <th scope="col" class="sort" data-sort="budget">Ücret</th>
                             <th scope="col" class="sort" data-sort="status">Durum</th>
                             <th scope="col">Görseller</th>
-                            <th scope="col" class="sort" data-sort="completion">###</th>
+                            <th scope="col" class="sort" data-sort="completion">Tamamlanma Oranı</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -28,10 +28,10 @@
                             <th scope="row">
                                 <div class="media align-items-center">
                                     <a href="#" class="avatar rounded-circle mr-3">
-                                        <img alt="Image placeholder" src="~/argon-dashboard-master/assets/img/theme/bootstrap.jpg">
+                                        <img alt="Image placeholder" src="@item.ImageUrl">
                                     </a>
                                     <div class="media-body">
-                                        <span class="name mb-0 text-sm">Argon Design System</span>
+                                        <span class="name mb-0 text-sm">@item.Name</span>
                                     </div>
                                 </div>
                             </th>
@@ -41,7 +41,7 @@
                             <td>
                                 <span class="badge badge-dot mr-4">
                                     <i class="bg-warning"></i>
-                                    <span class="status">pending</span>
+                                    <span class="status">Tamamlandı</span>
                                 </span>
                             </td>
                             <td>
@@ -88,5 +88,6 @@
                 </table>
             </div>
         </div>
+        <a href="/Portfolio/AddPortfolio" class="btn btn-success">Yeni Proje Ekle</a>
     </div>
 </div>
